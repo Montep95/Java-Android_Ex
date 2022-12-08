@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--탭호스트의 경우 전체 xmlns를 탭호스트로 지정해주어야함 -->
+<!-- ★아이디를 지정해주지 않으면 앱이 켜지지 않는 오류 발생 -->
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="wrap_content"
+    android:id="@android:id/tabhost" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- ★TabWidget과 FrameLayout 선언 시 주의점
+             id를 지정할때 @+id/~~~ 으로 지정하지 않고
+             @android:id/~~~ 으로 지정해야한다.
+        -->
+        <!--상단에 탭을 위치시킴 -->
+        <TabWidget
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@android:id/tabs">
+        </TabWidget>
+
+        <!-- 탭들을 담을 공간을 선언 -->
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@android:id/tabcontent">
+
+            <!-- 1번 위젯 - 음악별 -->
+            <LinearLayout
+                android:id="@+id/tabSong"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#f00000">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/song_1" />
+
+            </LinearLayout>
+
+            <!-- 2번 위젯 - 가수별 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/tabArtist"
+                android:background="#f0f000">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/lauv"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/conangray"/>
+
+            </LinearLayout>
+
+            <!-- 3번 위젯 - 앨범별 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/tabAlbum"
+                android:background="#f000ff">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/newhopeclub_knowmetoowell"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/newhopeclub_worse"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/jagwartwin_happyface"/>
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</TabHost>
