@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--calendarViewShown = "false" 는 데이트피커를 간단하게 보이도록 설정-->
+    <DatePicker
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/datePicker1"
+        android:calendarViewShown="false"/>
+
+    <!-- lines = 8 >> 에디트텍스트를 8행으로 설정 -->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtDiary"
+        android:background="#00ff00"
+        android:lines="8"/>
+
+    <!--초기버튼은 disable로 시작하고, Java코드에서 이를 관리할 것 -->
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnWrite"
+        android:enabled="false"
+        android:text="Button"/>
+
+</LinearLayout>
