@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/iconLayout"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <!-- 줌인 버튼 -->
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ibZoomin"
+            android:src="@drawable/zoom_in"/>
+
+        <!-- 줌아웃 버튼 -->
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ibZoomout"
+            android:src="@drawable/zoom_out"/>
+
+        <!-- 회전 버튼 -->
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ibrotate"
+            android:src="@drawable/rotate"/>
+
+        <!-- 밝게 버튼 -->
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ibbrighter"
+            android:src="@drawable/brighter"/>
+
+        <!-- 어둡게 버튼 -->
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ibdarkly"
+            android:src="@drawable/darkly"/>
+
+        <!-- 회색조 버튼 -->
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ibgray"
+            android:src="@drawable/gray_scale"/>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/pictureLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="9"
+        android:gravity="center"
+        android:orientation="horizontal">
+    </FrameLayout>
+
+</LinearLayout>
