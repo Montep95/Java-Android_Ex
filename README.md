@@ -17,3 +17,5 @@
 * BasicGraphic_Ex :-----Chapter 9. [Ex 9-1], p356~357
 * PaintProgram_Ex :----Chapter 9. [Practice 9-1 : Ex 9-2 ~ 9-5], p359~364
 * BitmapImage_Ex :-----Chapter 9. [Ex 9-6], p366~367
+* MiniPhotoshop_Ex :---Chapter 9. [Practice 9-2 : Ex 9-11 ~ 9-16], p373~382
+* PaintAdvanced_Ex :---Chapter 9. [Problem 6], p387
